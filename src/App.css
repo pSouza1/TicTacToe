@@ -1,0 +1,76 @@
+h1{
+  text-align: center;
+  font-size: 40px;
+}
+
+h2{
+  text-align: center;
+  font-size: 30px;
+}
+
+th{
+  text-align:right;
+  font-size: 15px;
+}
+
+.tablePosition{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+table{
+  border-collapse: collapse;
+}
+
+table td{
+  border: 3px solid #6d6d6d;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  font-size: 100px;
+}
+
+.X{
+  color: #ff0000;
+}
+
+.O{
+  color: #0000ff;
+}
+
+.scoreboard
+{
+  margin: 0px;
+  padding: 0px;
+  text-align: right;
+  font-size: 20px;
+  border: 0px;
+  vertical-align: top;
+  height: 80px;
+}
+
+.xvictory
+{
+  color: #ff0000;
+}
+
+.ovictory
+{
+  color: #0000ff;
+}
+
+.tie{
+  color:#808080;
+}
+
+.button {
+  background-color:#388d00;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+}
