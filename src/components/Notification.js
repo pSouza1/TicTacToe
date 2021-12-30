@@ -1,7 +1,7 @@
 import React from 'react'
-import PlayAgain from './PlayAgain'
+import PlayAgain from './playAgainButton/PlayAgain'
 
-const Notification = ({ message, classNameStyle, handleButtonClick }) => {
+const Notification = ({ message, classNameStyle, handleNotificationButtonClick }) => {
   if (message === null) {
     return null
   }
@@ -9,7 +9,7 @@ const Notification = ({ message, classNameStyle, handleButtonClick }) => {
   return (
     <div className={classNameStyle}>
       {message}
-      <PlayAgain handleButtonClick={handleButtonClick}/>
+      <PlayAgain handleNotificationButtonClick={handleNotificationButtonClick}/>
     </div>
   )
 }
