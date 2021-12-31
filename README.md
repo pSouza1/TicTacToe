@@ -9,9 +9,12 @@ The fastest way I found to apply this knowledge was to set up a JSON server to a
 
 
 Therefore, to run this project it is necessary to run on the console, as usual:
+
 $npm start
 
+
 and still run JSON Server:
+
 $ npx json-server --port 3001 --watch db.json
 
 
