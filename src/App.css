@@ -78,3 +78,10 @@ table td {
   font-size: 16px;
   border-radius: 10px;
 }
+
+.resetButton {
+  text-align: center;
+  font-size: 15px;
+  border-radius: 5px;
+  background-color: #fffacb;
+}

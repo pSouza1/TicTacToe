@@ -102,10 +102,28 @@ const App = () => {
 
 
   const handleNotificationButtonClick = () => {
-    console.log("button clicked");
+    console.log("play again button clicked");
     setSquares(initialState);
     setMoveCounter(initialState);
     setMessage(null);
+  };
+
+
+  const handleResetButtonClick = () => {
+    console.log("reset button clicked");
+    setSquares(initialState);
+    setMoveCounter(initialState);
+    setMessage(null);
+
+    const resetScore = [0, 0];
+    setScoreCounter(resetScore);
+
+    const score = "";
+    setScoreTracker(score);
+
+    scoreService.update({ score }).then((updatedScore) => {
+      console.log("scoreboard updated in DB: " + updatedScore.score);
+    });
   };
 
 
@@ -114,20 +132,10 @@ const App = () => {
       <h1>Tic-Tac-Toe</h1>
 
       <div className="tablePosition">
-        <BoardTable
-          nextPlayer={nextPlayer}
-          handleClick={handleClick}
-          squares={squares}
-          scoreCounter={scoreCounter}
-        />
+        <BoardTable nextPlayer={nextPlayer} handleClick={handleClick} squares={squares} scoreCounter={scoreCounter}/>
       </div>
 
-      <Notification
-        message={message}
-        classNameStyle={classNameStyle}
-        handleNotificationButtonClick={handleNotificationButtonClick}
-        scoreTracker={scoreTracker}
-      />
+      <Notification message={message} classNameStyle={classNameStyle} handleNotificationButtonClick={handleNotificationButtonClick} scoreTracker={scoreTracker} handleResetButtonClick={handleResetButtonClick}/>
     </div>
   );
 };
