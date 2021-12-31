@@ -18,4 +18,4 @@ and still run JSON Server:
 $ npx json-server --port 3001 --watch db.json
 
 
-This JSON Server aims to keep the scoreboard updated, even if the webpage is refreshed
+My goal with the JSON server integration is to persist scoreboard data, so we can avoid losing this information when refreshing the webpage
